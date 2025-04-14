@@ -741,6 +741,10 @@ const UserDashboard = () => {
   const handleTextEditor = () => {
     navigate('/text-editor')
   }
+
+  const handlePdfcheck = () => {
+    navigate('/pdf-check')
+  }
   useEffect(() => {
     //     localStorage.removeItem('user_id');
     // localStorage.removeItem('username');
@@ -831,7 +835,7 @@ const UserDashboard = () => {
               </div>
               <div className="adminDetailsRight ms-auto">
                 <img src={assignedPage} alt="Assigned pages icon" className="img-fluid" style={{width: "48px"}} />
-              </div>
+              </div> 
             </div>
           </div>
           
@@ -870,7 +874,7 @@ const UserDashboard = () => {
                   <h5 className="mb-0">{`RECENT PDF LISTINGS (${pdfList[0]?.pdf_info?.length || 0})`}</h5>
                 </div>
                 <div className="pdfHeadingBtn">
-                  <button className="btn btn-sm btn-primary">View All</button>
+                  <button className="btn btn-sm btn-primary"  onClick={handlePdfcheck}>View All</button>
                 </div>
               </div>
 
