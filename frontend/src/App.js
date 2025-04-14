@@ -49,7 +49,7 @@
 //           </>
 //         {/* ) : ( */}
 //           <Route path="*" element={<Navigate to="/login" />} />
-//         {/* )} */}
+//         {/* )} */} 
 //       </Routes>
 //     </Router>
 //   );
@@ -71,6 +71,8 @@ import AdminLayout from './components/layout/AdminLayout';
 import TextEditor from './components/User/textEditor/TextEditor';
 import PdfPages from './components/User/pdfpages/PdfPages';
 import PdfCheck from './components/User/pdfChecker/PdfCheck';
+
+
 
 const App = () => {
   const [role, setRole] = useState(localStorage.getItem('role'));

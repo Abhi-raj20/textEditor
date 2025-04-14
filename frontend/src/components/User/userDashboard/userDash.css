@@ -118,7 +118,7 @@
 .custom-table tbody tr:first-child  {
     background: #088586 !important; 
     color: white;
-    /* font-weight: bold; */
+    font-weight: bold;
   }
   
 

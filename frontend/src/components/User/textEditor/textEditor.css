@@ -123,7 +123,9 @@
     /* display: grid; */
 }
 
-
+.thumbnail{
+    height: inherit;
+}
 
 .imgListing{
     display: flex;
@@ -133,6 +135,7 @@
     width: 100%;
     padding: 7px 0px;
     justify-content: center;
+    height: 100px;
 }
 
 .imgListing h4 {
@@ -141,7 +144,7 @@
 
 
 .scrollWrapper {
-  overflow-x: auto;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -165,6 +168,7 @@
 
 .middleTextEditorImg img {
     width: 100%;
+    height: 400px;
 }
 
 .middleTextPageNO {
@@ -234,3 +238,75 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+
+/* Timer Display */
+.timer-display {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Timeout Popup */
+  .timeout-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .timeout-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .timeout-popup h3 {
+    margin-top: 0;
+    color: #d9534f;
+  }
+  
+  .timeout-popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .timeout-popup-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .timeout-popup-buttons button:first-child {
+    background-color: #5bc0de;
+    color: white;
+  }
+  
+  .timeout-popup-buttons button:last-child {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modify the existing editorTopRightBtn to include the timer */
+  .editorTopRightBtn {
+    display: flex;
+    align-items: center;
+  }

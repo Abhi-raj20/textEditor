@@ -329,15 +329,3 @@
     color: #6c757d;
   }
   
-
-  .custom-user-table th:first-child {
-    text-align: left !important;
-  }
-  
-  .custom-user-table th {
-    text-align: left !important;
-  }
-  .userProgressTable .custom-user-table thead th {
-    text-align: left !important;
-  }
-  

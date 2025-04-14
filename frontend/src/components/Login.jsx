@@ -224,6 +224,10 @@ const Login = () => {
     //   alert("Please complete the captcha!");
     //   return;
     // }
+//  localStorage.removeItem('user_id');
+//     localStorage.removeItem('username');
+//     localStorage.removeItem('role');
+//     localStorage.removeItem('access_token');
 
 
     try {
